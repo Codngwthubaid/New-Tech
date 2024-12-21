@@ -17,7 +17,7 @@ This repository is a living archive of my continuous learning in the ever-evolvi
 | **Technology**                            | **Description**                                      | **Learn More**                      |
 |-------------------------------------------|------------------------------------------------------|--------------------------------------|
 | 🔒 **Arcjet**                              | Security for your backend application.               | [[Arcjet Documentation](https://docs.arcjet.com/)](#)           |
-| 🤖🔊 **11Labs**                              | Create AI audio platform.               | [[Arcjet Documentation](https://elevenlabs.io/docs/conversational-ai/docs/agent-setup)](#)           |
+| 🤖🔊 **11Labs**                              | Create AI audio platform.               | [[11Labs Documentation](https://elevenlabs.io/docs/conversational-ai/docs/agent-setup)](#)           |
 
 ---
 
