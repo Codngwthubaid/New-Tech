@@ -16,25 +16,8 @@ This repository is a living archive of my continuous learning in the ever-evolvi
 
 | **Technology**                            | **Description**                                      | **Learn More**                      |
 |-------------------------------------------|------------------------------------------------------|--------------------------------------|
-| 🔒 **Arcjet**                              | Security for your backend application.               | [Arcjet Documentation](#)           |
-
----
-
-## **📚 Technologies Explored So Far**  
-
-| **Technology Name**                       | **Learn More**                                       |
-|-------------------------------------------|------------------------------------------------------|
-| 🌐 **React.js**                            | [React.js Official Site](https://reactjs.org)        |
-| 🖌️ **Tailwind CSS**                        | [Tailwind CSS Official Site](https://tailwindcss.com)|
-| 🚀 **Next.js**                             | [Next.js Official Site](https://nextjs.org)          |
-| 🔒 **Arcjet**                              | [Arcjet Documentation](#)                           |
-
----
-
-## **📂 Repository Structure**  
-- `logs/` - Daily notes and quick tips for using various tools.  
-- `projects/` - Sample projects created while learning new technologies.  
-- `resources/` - Links to useful documentation, videos, and tutorials.  
+| 🔒 **Arcjet**                              | Security for your backend application.               | [[Arcjet Documentation](https://docs.arcjet.com/)](#)           |
+| 🤖🔊 **11Labs**                              | Create AI audio platform.               | [[Arcjet Documentation](https://elevenlabs.io/docs/conversational-ai/docs/agent-setup)](#)           |
 
 ---
 
