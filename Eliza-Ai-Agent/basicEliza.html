@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliza AI Chat - Disk Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #chat {
+            max-width: 600px;
+            margin: auto;
+        }
+        #chatOutput {
+            border: 1px solid #ddd;
+            padding: 10px;
+            height: 300px;
+            overflow-y: auto;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat">
+        <h2>Eliza AI Chat - Disk Management</h2>
+        <div id="chatOutput"></div>
+        <input type="text" id="userInput" placeholder="Type a question...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        // Enhanced Eliza response logic with disk management data
+        function getElizaResponse(input) {
+            input = input.toLowerCase();
+            if (input.includes("contiguous allocation")) {
+                return "Contiguous Allocation stores files in contiguous blocks on the disk, providing fast access but suffering from fragmentation.";
+            } else if (input.includes("linked allocation")) {
+                return "Linked Allocation uses a linked list to store file blocks scattered across the disk, offering flexibility but slower access.";
+            } else if (input.includes("indexed allocation")) {
+                return "Indexed Allocation utilizes an index block to store pointers to file blocks, supporting direct access with higher overhead for small files.";
+            } else if (input.includes("hdd") || input.includes("hard disk drive")) {
+                return "An HDD is a secondary memory storage device with platters divided into tracks and sectors, key operations involve seek time, rotational latency, and data transfer.";
+            } else if (input.includes("fcfs")) {
+                return "FCFS (First Come First Serve) processes I/O requests in the order they arrive. It's fair but not optimized for seek time.";
+            } else if (input.includes("sstf")) {
+                return "SSTF (Shortest Seek Time First) prioritizes requests with the shortest seek time, improving response time but possibly causing starvation.";
+            } else if (input.includes("scan")) {
+                return "SCAN moves the disk arm in one direction servicing requests, then reverses, balancing throughput and response time.";
+            } else if (input.includes("c-scan")) {
+                return "C-SCAN is similar to SCAN but the arm returns to the start without servicing in the reverse direction, providing uniform wait times.";
+            } else if (input.includes("look")) {
+                return "LOOK is like SCAN but stops at the last request before reversing, reducing unnecessary movement.";
+            } else if (input.includes("c-look")) {
+                return "C-LOOK moves to the last request in one direction and then jumps to the start, preventing unnecessary traversal.";
+            } else {
+                return "I'm sorry, I don't have information on that. Could you ask something else related to disk management?";
+            }
+        }
+
+        function sendMessage() {
+            const userInput = document.getElementById('userInput').value;
+            if (userInput.trim() === "") return;
+            
+            const chatOutput = document.getElementById('chatOutput');
+            chatOutput.innerHTML += `<p><strong>User:</strong> ${userInput}</p>`;
+            
+            const elizaResponse = getElizaResponse(userInput);
+            chatOutput.innerHTML += `<p><strong>Eliza:</strong> ${elizaResponse}</p>`;
+            
+            document.getElementById('userInput').value = '';
+            chatOutput.scrollTop = chatOutput.scrollHeight; // Scroll to the bottom
+        }
+    </script>
+</body>
+</html>

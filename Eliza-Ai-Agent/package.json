@@ -1,0 +1,17 @@
+{
+  "name": "eliza-ai-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "script.js",
+  "scripts": {
+    "dev" : "run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ai16z/eliza": "^0.1.6",
+    "express": "^4.21.2"
+  }
+}
